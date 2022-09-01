@@ -48,6 +48,14 @@ CREATE TABLE "employees" (
 SELECT *
 FROM employees;
 
+-- Change Date Columns to Date Type
+
+ALTER TABLE "employees" ALTER COLUMN "hire_date" TYPE DATE
+using to_date("hire_date", 'MM/DD/YYYY');
+
+ALTER TABLE "employees" ALTER COLUMN "birth_date" TYPE DATE
+using to_date("birth_date", 'MM/DD/YYYY');
+
 -- Create the dept_emp table
 
 CREATE TABLE "dept_emp" (

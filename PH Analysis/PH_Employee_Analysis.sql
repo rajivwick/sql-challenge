@@ -1,10 +1,3 @@
--- Change Date Columns to Date Type
-
-ALTER TABLE "employees" ALTER COLUMN "hire_date" TYPE DATE
-using to_date("hire_date", 'MM/DD/YYYY');
-
-ALTER TABLE "employees" ALTER COLUMN "birth_date" TYPE DATE
-using to_date("birth_date", 'MM/DD/YYYY');
 
 
 -- Question 1 List the following details of each employee: employee number, last name, first name, sex, and salary.
